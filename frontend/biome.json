@@ -1,0 +1,37 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.0/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"a11y": {
+				"useValidAnchor": "off",
+				"useKeyWithClickEvents": "off",
+				"useKeyWithMouseEvents": "off"
+			},
+			"style": {
+				"useImportType": "off",
+				"noNonNullAssertion": "off",
+				"useShorthandArrayType": "off",
+				"useNodejsImportProtocol": "error"
+			},
+			"correctness": {
+				"noChildrenProp": "off",
+				"noUnusedImports": "error",
+				"noUnusedVariables": "off"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "off",
+				"noDoubleEquals": "warn"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2,
+		"indentStyle": "space"
+	}
+}

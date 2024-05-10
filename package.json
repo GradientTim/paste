@@ -1,0 +1,24 @@
+{
+  "name": "gradient-paste",
+  "module": "backend/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun backend/index.ts",
+    "dev": "bun --watch backend/index.ts",
+    "prod": "cd ./frontend/ && bun run build && cd ../ && bun run start"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.1.11",
+    "hono": "^3.12.9",
+    "mongodb": "6.6",
+    "tracer": "^1.3.0",
+    "ulid": "^2.3.0",
+    "zod": "^3.22.4"
+  }
+}
